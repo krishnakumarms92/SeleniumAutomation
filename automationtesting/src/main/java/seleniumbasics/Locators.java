@@ -30,10 +30,12 @@ public class Locators extends Base {
 	public void cssSelectorLocator() {
 		// Syntax:
 		// tag and id, tag and class, tag and attribute, tag class and attribute
-		// tag#id
-		// tag[attribute=attribute value]
-		// tag.class[attribute type =attribute value]
-		// tag.class
+		
+		//Syntax
+		// tag#id	= button#button-one
+		// tag[attribute=attribute value] = input[type=button]
+		// tag.class[attribute type =attribute value] = input.form-control[type=text]
+		// tag.class  = input.form-control
 
 		WebElement tagIdLocator = driver.findElement(By.cssSelector(null));
 	}
